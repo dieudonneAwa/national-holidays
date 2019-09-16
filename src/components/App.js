@@ -6,19 +6,17 @@ import Header from './Header';
 import './App.css';
 import Footer from './Footer';
 
-const App = () => {
-  return (
-      <Router>
-    <div>
-      <Header/>
-        <div className="container">
-          <Route exact path="/" component={CountryList} />
-          <Route path="/country" component={CountryDetail} />
-        </div>
-        <Footer />
-    </div>
-      </Router>
-  );
-};
+const App = () => (
+    <Router>
+      <div>
+        <Header/>
+          <div className="container">
+            <Route exact path="/" component={CountryList} />
+            <Route path="/country" component={CountryDetail} />
+          </div>
+          <Footer />
+      </div>
+    </Router>
+);
 
 export default App;

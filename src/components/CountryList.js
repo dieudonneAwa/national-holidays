@@ -8,7 +8,7 @@ class CountryList extends React.Component {
   componentDidMount() {
     this.props.fetchCountries();
   }
-  
+
   renderList() {
     return this.props.countries.map(country => (
       <NavLink className="row country" to="/country" onClick={() => this.props.selectCountry(country)} key={country.name}>
@@ -18,14 +18,15 @@ class CountryList extends React.Component {
   }
 
   render() {
-    // console.log(this.props);
-    return (<div className="container">{this.renderList()}</div>
+    return (
+      <div className="container">
+        {this.renderList()}
+      </div>
     );
   }
 }
 
 const mapStateToProps = (state) => {
-  // console.log(state.countries);
   return { countries: state.countries };
 };
 

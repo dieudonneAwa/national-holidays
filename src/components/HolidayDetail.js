@@ -11,20 +11,18 @@ class HolidayDetail extends React.Component {
     if (!this.props.holidays[0]) {
       return null;
     }
-    return this.props.holidays[0].map(holiday => {
-      return (
-        <div className="holidayDetail">
-          <h5>
-              <span>{holiday.name}</span> <br/>
-              <small>Date: {holiday.date}</small> <br/>
-              <small>Day: {holiday.weekday.date.name}</small><br/>
-              <small>
-                { holiday.public === true ? 'Public holiday' : 'Private holiday' }
-              </small>
-          </h5>
-        </div>
-      )
-    })
+    return this.props.holidays[0].map(holiday => (
+      <div className="holidayDetail">
+        <h5>
+            <span>{holiday.name}</span> <br/>
+            <small>Date: {holiday.date}</small> <br/>
+            <small>Day: {holiday.weekday.date.name}</small><br/>
+            <small>
+              { holiday.public === true ? 'Public holiday' : 'Private holiday' }
+            </small>
+        </h5>
+      </div>
+    ));
   }
 
   render() {
