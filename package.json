@@ -3,10 +3,11 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "homepage": "http://{dieudonneAwa}.github.io/{national-holidays}",
+  "homepage": "http://dieudonneAwa.github.io/national-holidays",
   "scripts": {
     "start": "webpack-dev-server --open --hot --mode development",
     "build": "webpack --mode production",
+    "heroku-postbuild": "webpack --mode production",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d dist"
   },
