@@ -1,27 +1,22 @@
 import React from 'react';
 import { connect } from 'react-redux';
+import { NavLink } from 'react-router-dom';
 import { selectCountry } from '../actions/index';
+import './CountryList.css';
 
 class CountryList extends React.Component {
   renderList() {
-    return this.props.countries.map(country => {
-      return (
-        <div className="container" key={country.name}>
-          <div className="row">
-            <div className="col-lg-6">{country.name}</div>
-            <div className="col-lg-6">
-              <buttton className="btn btn-primary" onClick={() => this.props.selectCountry(country)}>
-                Select
-              </buttton>
-            </div>
-          </div>
-        </div>
-      );
-    });
+    return this.props.countries.map(country => (
+      <NavLink className="row" to="/country" onClick={() => this.props.selectCountry(country)} key={country.name}>
+        <div className="col-lg-11">{country.name}</div>
+      </NavLink>
+    ));
   }
 
   render() {
-    return <div className="ui divided list">{this.renderList()}</div>;
+    return (<div className="">
+      {this.renderList()}</div>
+    );
   }
 }
 

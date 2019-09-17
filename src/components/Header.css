@@ -1,0 +1,68 @@
+.container-fluid {
+  position: relative;
+  width: 100%;
+  height: 100px;
+  background: #00f;
+  margin-bottom: 10px;
+}
+.logo {
+  margin-left: 50px;
+  position: absolute;
+  width: 72px;
+  height: 58px;
+  left: 0;
+  top: 20px;
+  font-family: Zilla Slab Highlight;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 48px;
+  line-height: 58px;
+  color: #ffffff;
+  border: 2px solid #ffffff;
+}
+.logo:link {
+  color: white;
+  text-decoration: none;
+}
+.logo:visited {
+  color: white;
+}
+.brand {
+  margin-left: 65px;
+  position: absolute;
+  width: 236px;
+  height: 61px;
+  left: 75px;
+  top: 18px;
+  font-family: Lora;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 48px;
+  line-height: 61px;
+  color: #ffffff;
+}
+.brand:link {
+  color: white;
+  text-decoration: none;
+}
+.brand:visited {
+  color: white;
+}
+.countries {
+  position: absolute;
+  left: 80%;
+  top: 18px;
+  font-family: Lora;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 48px;
+  line-height: 61px;
+  color: #ffffff;
+}
+.countries:link {
+  color: white;
+  text-decoration: none;
+}
+.countries:visited {
+  color: white;
+}
