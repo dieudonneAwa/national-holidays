@@ -14,29 +14,24 @@ class HolidayDetail extends React.Component {
     }
     return this.props.holidays[0].map(holiday => {
       return (
-        <div>
-          <ul>
+        <div className="holidayDetail">
           <h5>
-            <li>
-              {holiday.name}
-              <ul>
-              <small><li>Date: {holiday.date}</li></small>
-              <small><li>Day: {holiday.weekday.date.name}</li></small>
-              <small><li>{}</li></small>
-              </ul>
-            </li>
+              <span>{holiday.name}</span> <br/>
+              <small>Date: {holiday.date}</small> <br/>
+              <small>Day: {holiday.weekday.date.name}</small><br/>
+              <small>
+                { holiday.public === true ? 'Public holiday' : 'Private holiday' }
+              </small>
           </h5>
-          </ul>
         </div>
       )
     })
   }
 
   render() {
-    // console.log(this.props.holidays);
     return (
-      <div>
-        <h3>Holiday Detail</h3>
+      <div className="countryDetail">
+        <h3>Public Holidays</h3>
         {this.renderList()}
       </div>
     );
