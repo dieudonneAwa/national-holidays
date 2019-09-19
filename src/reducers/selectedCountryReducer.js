@@ -1,6 +1,6 @@
 export default (state = [], action) => {
   switch (action.type) {
-    case 'FETCH_COUNTRIES':
+    case 'COUNTRY_SELECTED':
       return action.payload;
     default:
       return state;

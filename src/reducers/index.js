@@ -1,15 +1,10 @@
 import { combineReducers } from 'redux';
 import countriesReducer from './countriesReducer';
-
-const selectedCountryReducer = (selectedCountry = null, action) => {
-  if (action.type === 'COUNTRY_SELECTED') {
-    
-    return action.payload;
-  }
-  return selectedCountry;
-};
+import selectedCountryReducer from './selectedCountryReducer';
+import holidayReducer from './holidayReducer';
 
 export default combineReducers({
   countries: countriesReducer,
-  selectedCountry: selectedCountryReducer
+  selectedCountry: selectedCountryReducer,
+  holidays: holidayReducer
 });
