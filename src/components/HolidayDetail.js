@@ -8,7 +8,6 @@ class HolidayDetail extends React.Component {
   }
 
   renderList() {
-    console.log('This is holiday', this.props.holidays[0]);
     if (!this.props.holidays[0]) {
       return null;
     }

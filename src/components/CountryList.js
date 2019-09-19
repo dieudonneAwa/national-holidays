@@ -11,7 +11,7 @@ class CountryList extends React.Component {
   
   renderList() {
     return this.props.countries.map(country => (
-      <NavLink className="row" to="/country" onClick={() => this.props.selectCountry(country)} key={country.name}>
+      <NavLink className="row country" to="/country" onClick={() => this.props.selectCountry(country)} key={country.name}>
         <div className="col-lg-11">{country.name}</div>
       </NavLink>
     ));

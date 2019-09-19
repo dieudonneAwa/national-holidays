@@ -2,9 +2,12 @@
   border-bottom: 1px solid #aaa;
 }
 .country:link {
-  color: #181818;
+  color: #00f;
   text-decoration: none;
 }
 .country:visited {
   color: #181818;
+}
+.country:hover {
+  color: #00f;
 }
