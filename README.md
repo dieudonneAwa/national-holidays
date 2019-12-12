@@ -1,5 +1,5 @@
 # national-holidays
-Here is the link the app on heroku:  https://naholidays.heriokuapp.com
+Here is the link the app on heroku:  https://naholidays.herokuapp.com
 
 ### Problem
 Global organisations are impacted by national holidays in the countries in which they operate and would wish to plan their activities in advance in lieu of these holidays.
