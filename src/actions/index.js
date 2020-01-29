@@ -22,7 +22,7 @@ export const selectCountry = country => {
 
 export const fetchHoliday = (countryCode) => async dispatch => {
   try {
-    const { data } = await holidayApi.get(`/holidays?key=b3fb9767-3294-46ed-badd-f8bd4da4bb46&country=${countryCode}&year=2018`);
+    const { data } = await holidayApi.get(`/holidays?key=b3fb9767-3294-46ed-badd-f8bd4da4bb46&country=${countryCode}&year=2019`);
     return dispatch({ type: 'FETCH_HOLIDAY', payload: data.holidays });
   } catch (error) {
     throw new Error(error);
